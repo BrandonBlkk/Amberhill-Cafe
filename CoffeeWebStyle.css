@@ -1,0 +1,575 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ededef;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(57, 55, 55);
+}
+nav .logo {
+    display: flex;
+    cursor: pointer;
+}
+nav .logo div {
+    display: flex;
+    align-items: center;
+}
+nav .logo .logo-img img {
+    margin: 5px 0px 10px 0px;
+    padding: 5px 5px 0px 10px;
+    width: 40px;
+}
+nav .logo a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px 0px 10px;
+}
+nav .logo .input {
+    padding: 15px;
+    margin-left: 5px;
+}
+nav .logo .input #search {
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    width: 30rem;
+    outline: none;
+    font-size: 15px;
+}
+nav .logo .input button {
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: .4s;
+}
+nav .logo .input button:hover {
+    color: rgb(27, 186, 154);
+}
+.app {
+    position: absolute;
+    right: 0;
+}
+.app li {
+    list-style-type: none;  
+}
+.app li a {
+    color: white;
+    text-decoration: none;
+}
+.app .appul {
+    display: flex;
+    padding: 15px;
+}
+.app .appul li {
+    padding: 5px 10px 0px 30px;
+}
+.app .appul li #arrow {
+    font-size: 13px;
+    margin-left: 10px;
+    transition: .4s;
+}
+.app .appul li #arrow:hover {
+    transform: rotate(90deg);
+}
+.app .appul #dots {
+    color: white;
+    cursor: pointer;
+}
+.app .appul button {
+    background-color: rgb(27, 186, 154);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: -4px 20px 0px 0px ;
+    width: 80px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+.app .appul button:hover {
+    background-color: rgba(27, 186, 154, 0.877);
+    border: none;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+}
+.product {
+    position: relative;
+    background-color:whitesmoke;
+    margin: 10px;
+	font-size: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .4s;
+    width: 380px;
+    text-decoration: none;
+}
+.product:hover {
+    transform: rotate(-2deg);
+}
+.product-img {
+    display: flex;
+    justify-content: center;
+}
+.product-img img {
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+.label{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.description {
+    color: rgb(104, 104, 104);
+    font-size: 15px;
+}
+.price {
+    color: gold;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.content-container {
+    background-color: #151717;
+    padding: 170px 90px 90px 90px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.img img {
+    width: 640px;
+    height: 500px;
+}
+h1, p {
+    color: white;
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+}
+.content-button {
+    padding: 20px;
+}
+button {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid rgb(229, 172, 91);
+    cursor: pointer;
+    transition: .4s;
+}
+.btn1 {
+    background-color: rgb(229, 172, 91);
+}
+.btn1:hover {
+    background-color: transparent;
+}
+.btn1 a, .btn2 a{
+    text-decoration: none;
+    color: white;
+}
+.btn2:hover {
+    background-color: rgb(229, 172, 91);
+}
+
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.payment-container h1 {
+    color: #151717;
+    font-family: cursive;
+    font-size: 2em;
+}
+.pay-box {
+    display: flex;
+}
+.payment {
+    padding: 70px;
+}
+.payment .img {
+    display: flex;
+    justify-content: center;
+}
+.payment img {
+    width: 40px;
+    height: 40px;
+    transition: .4s;
+}
+.payment img:hover {
+    transform: rotate(-20deg);
+}
+.payment .text {
+    text-align: center;
+}
+.payment p {
+    color: #151717;
+}
+.about-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-container .about-img {
+    display: flex;
+    justify-content: center;
+}
+.about-container .about-img img {
+    width: 600px;
+    height: 500px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+.about h1 {
+    font-family: cursive;
+    font-size: 2em;
+}
+.about h1, .about-p {
+    color: #151717;
+}
+.why-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(180, 180, 180, 0.353);
+}
+.why-us-container h1 {
+    color: #151717;
+    font-family: cursive;
+    font-size: 2em;
+}
+.why-us-box {
+    display: flex;
+    padding: 50px;
+}
+.why-us {
+    text-align: center;
+}
+.why-us .img img {
+    width: 40px;
+    height: 40px;
+}
+.why-us-text p {    
+    color: #151717;
+}
+.why-us-text .para {
+    color: rgb(104, 104, 104);
+    font-size: 15px;
+}
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(180, 180, 180, 0.353);
+}
+.gallery-container h1 {
+    color: #151717;
+    font-family: cursive;
+    font-size: 2em;
+}
+.gallery-box {
+    display: flex;
+}
+.gallery {
+    padding: 50px;
+}
+.gallery-img img {
+    width: 300px;
+    border-radius: 15px;
+}
+.map iframe {
+    width: 30em;
+    height: 20em;
+}
+.contact {
+    padding: 50px;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-top: 1px solid rgba(180, 180, 180, 0.353);
+}
+.contact-container h1 {
+    color: #151717;
+    font-family: cursive;
+    font-size: 2em;
+}
+.contact-main {
+    display: flex;
+    align-items: center;
+}
+.contact-box {
+    display: flex;
+    margin-left: 15px;
+}
+.contact-box p {
+    color: #151717;
+    font-size: 15px;
+}
+.contact-img img {
+    width: 20px;
+}
+.contact-text {
+    margin-left: 15px;
+}
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(57, 55, 55);
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px 50px 0px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo h2 {
+    color: white;
+    padding-right: 15px;
+}
+.footer .footer-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+.footer .footer-link a {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.659);
+    text-decoration: none;
+    padding: 5px;
+    transition: .4s;
+}
+.footer .footer-link a:hover {
+    color: white;
+    text-decoration: underline;
+}
+footer {
+    padding: 0px 150px 10px 150px;
+}
+footer p {
+    color: white;
+    font-size: 15px;
+}
+footer .links {
+    border-top: 1px solid rgba(255, 255, 255, 0.436);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+footer .links a {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+footer #facebook {
+    color: white;
+}
+footer #instagram {
+    color: white;
+}
+footer #twitter {
+    color: white;
+}
+.main-title {
+    display: flex;
+    justify-content: flex-start;
+}
+.title {
+    padding: 100px 20px 20px 20px;
+    margin: -30px 0px -90px 20px;
+}
+.title h1 {
+    color: rgb(229, 172, 91);
+    font-family: cursive;
+    font-size: 2em;
+}
+.hover {
+    position: absolute;
+    top: 0; 
+    right: 10px;
+}
+.hover a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: rgba(229, 171, 91, 0.681);
+    padding: 5px;
+    border-radius: 15px;
+}
+.discount-container {
+    padding: 0px 50px 50px 50px;
+}
+.dis-box {
+    background-color: rgba(229, 171, 91, 0.496);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 30%;
+}
+.dis-box .text p{
+    color: #151717;
+    font-size: large;
+}
+.dis-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.dis-btn button {
+    background-color: rgba(229, 171, 91, 0.934);
+}
+
+@media (max-width: 1200px) {
+    .gallery {
+        padding: 15px;
+    }
+}
+@media (max-width: 1024px) {
+    nav .logo .input #search {
+        width: 20rem;
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .about {
+        padding: 0px;
+    }
+    .gallery-box {
+        flex-direction: column;
+    }
+    .dis-box {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+@media (max-width: 882px) {
+    nav .logo .input #search {
+        width: 10rem;
+    }
+    .pay-box {
+        flex-direction: column;
+    }
+    .payment img {
+        width: 40px;
+        height: 40px;
+    }
+    .contact-main {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .app {
+        position: relative;
+        justify-content: center;
+    }
+    .title {
+        padding-top: 200px;
+    }
+    nav .logo .input #search {
+        width: 30rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .img img {
+        width: 440px;
+        height: 300px;
+    }
+    .payment img {
+        width: 40px;
+        height: 40px;
+    }
+    .why-us-box {
+        flex-direction: column;
+    }
+}
+@media (max-width: 696px) {
+    nav .logo .input #search {
+        width: 20rem;
+    }
+    .title {
+        padding-top: 200px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        padding: 0px 30px 10px 30px;
+    }
+}
+@media (max-width: 560px) {
+    .nav1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .title {
+        padding-top: 260px;
+    }
+    .about-container .about-img img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+
+
+    
